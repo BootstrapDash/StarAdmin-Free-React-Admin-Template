@@ -1,0 +1,113 @@
+
+.card-revenue {
+  background: linear-gradient(120deg, #556cdc, #128bfc, #18bef1);
+  background-size: cover;
+  color: color(white);
+
+  .highlight-text {
+    font-size: 1.875rem;
+    font-family: $type1;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .badge {
+    background-color: rgba(color(white), .2);
+    font-size: 1.125rem;
+    padding: 0.5rem 1.25rem;
+  }
+}
+
+.card-revenue-table {
+  .revenue-item {
+    border-bottom: 1px solid $border-color;
+    @extend .py-3;
+
+    &:last-child {
+      border-bottom: 0;
+      @extend .pb-0;
+    }
+
+    &:first-child {
+      @extend .pt-0;
+    }
+
+    .revenue-desc {
+      margin-right: auto;
+      width: 80%;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    .revenue-amount {
+      margin-left: auto;
+      width: 40%;
+
+      p {
+        font-size: 1.25rem;
+        font-family: $type1;
+        font-weight: 600;
+        text-align: right;
+
+        .rtl & {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+.proBanner {
+  .purchase-popup {
+    @extend .grid-margin;
+    background: #fff;
+    padding: 15px 20px;
+    @include border-radius(3px);
+
+    .btn {
+      margin-right: 20px;
+      font-weight: 500;
+      color: $white;
+      @include border-radius(5px);
+      @include transition-duration(0.2s);
+
+      &.download-button {
+        background: rgba(249, 249, 249, 0.7);
+        color: #969292;
+        border: 1px solid darken(#e4e4e4,5%);
+      }
+
+      &.purchase-button {
+        background-color: theme-color(info);
+        color: $white;
+        border: none;
+        line-height: 1;
+        vertical-align: middle;
+      }
+    }
+
+    p {
+      margin-bottom: auto;
+      margin-top: auto;
+      color: darken(#e4e4e4,40%);
+      font-weight: 400;
+      vertical-align: middle;
+      line-height: 1;
+    }
+
+    i {
+      vertical-align: middle;
+      line-height: 1;
+      margin: auto 0;
+      color: darken(#e4e4e4,20%);
+    }
+    .bannerClose {
+      cursor: pointer;
+    }
+  }
+  &.hide {
+    display: none;
+  }
+}

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <title>Documentation</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/codemirror.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/theme/dracula.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid documentation">
+      <div class="row">
+        <div class="col-md-3 col-xl-2 left-sidebar"> 
+          <div class="logo-wrapper">
+              <img src="../template/demo_1/src/assets/images/logo.svg" alt="logo">
+          </div>
+          <h5 class="left-menu-title">Documentation</h5>
+          <ul class="left-menu">
+              <li><a href="#introduction"> Introduction </a></li>
+              <li><a href="#fileStructure"> File Structure </a></li>
+          </ul>
+          <h6 class="left-menu-title">Installation</h6>
+          <ul class="left-menu">
+              <li><a href="#setupEnvironment"> Setup Environment </a></li>
+              <li><a href="#templateInstallation"> Template Installation </a></li>
+          </ul>
+          <h6 class="left-menu-title">Deployment</h6>
+          <ul class="left-menu">
+              <li><a href="#deployment"> Deploy React App </a></li>
+          </ul>
+          <h6 class="left-menu-title">Basic Structure</h6>
+          <ul class="left-menu">
+              <li><a href="#appComponent"> App Component </a></li>
+              <li><a href="#navbar"> Navbar </a></li>
+              <li><a href="#leftSidebar">sidebar </a></li>
+              <li><a href="#footer"> Footer </a></li>
+          </ul>
+          <h6 class="left-menu-title">Other Information</h6>
+          <ul class="left-menu">
+              <li><a href="#customerSupport"> Customer Support </a></li>
+          </ul>
+        </div>
+        <div class="col-md-9 col-xl-10 main-panel bg-white">
+          <div class="main-panel-wrapper">
+              <h2 class="mt-2 text-center font-weight-light text-muted text-uppercase mb-4">Documentation</h2>
+              <div class="card grid-margin">
+                <div class="card-body">
+                  <h3 id="introduction" class="mb-4">Introduction</h3>
+                  <p>Star Admin is a responsive React template that is based on the CSS framework Bootstrap 4 and it is built with Sass. Sass compiler makes it easier to code and customize. If you are unfamiliar with Bootstrap or Sass, visit their
+                      website and read through the documentation. All of Bootstrap components have been modified to fit the style of Star Admin and provide a consistent look throughout the template.</p>
+                  <p>Before you start working with the template, we suggest you go through the pages that are bundled with the theme. Most of the template example pages contain quick tips on how to create or use a component which can
+                      be really helpful when you need to create something on the fly.</p>
+                  </div>
+              </div>
+              <div class="card grid-margin">
+                <div class="card-body">
+                  <h3 id="fileStructure" class="mb-4">File Structure</h3>
+                  <p>Once you have download the package you will see the following folder structure inside the folder.</p>
+                  <textarea rows="4" cols="50" class="code-non-editable">
+Star-admin/
+├── React
+    ├── template
+      ├── demo_1
+          ├── src/
+              ├── app/
+              ├── assets/
+                  ├── images/
+                  ├── styles/
+              ├── index.js
+          ├── public/
+          ├── .gitignore
+          ├── CHANGELOG.md
+          ├── package.json
+          ├── README.md
+    ├── CHANGELOG.md
+    ├── documentation
+
+                  </textarea>
+                </div>
+              </div>
+              <div class="card grid-margin">
+                <div class="card-body">
+                  <h3>Installation</h3>
+                  <h4 id="setupEnvironment" class="pt-4">Set up the Development Environment</h4>
+                  <p>Install <a href="https://nodejs.org/en/" target="_blank">Node.js and npm</a> if they are not already on your machine.</p>
+                  <h4 id="templateInstallation" class="pt-4">Template Installation</h4>
+                  <p>Go to the project directory and install the React local project dependencies.</p>
+                  <p>Run <code>npm install</code>. This command install the dependencies in the local <code>node_modules</code> folder.
+                      By default, <code>npm install</code> will install all modules listed as dependencies in <code>package.json</code>.</p>
+                  <textarea rows="4" cols="50" class="code-non-editable">npm install</textarea>   
+                  <textarea rows="4" cols="50" class="code-non-editable">npm start</textarea>                   
+                  <p>The <code>npm start</code> command launches the server, watches your files, and rebuilds the app as you make changes to those files.
+                   </p>
+                  <p>For more detailed information to install the React application, visit this official React <a href="https://reactjs.org/docs/getting-started.html" target="_blank">documentation website</a>.</p>
+                </div>
+              </div>
+              <div class="card grid-margin">
+                <div class="card-body">
+                  <h3 id="deployment">Deployment</h3>
+                  <h4 class="pt-4">Deploy React app </h4>
+                  <p>For the simplest deployment, create a production build and copy the output directory to a web server.</p>
+                  <p>1. Start with the production build:</p>
+                  <textarea rows="4" cols="50" class="code-non-editable">npm run-script build</textarea> 
+                  <p>For more detailed information to install the React application, visit <a href="https://create-react-app.dev/docs/deployment" target="_blank">Deployment website</a>.</p>
+                  <p>2. Copy everything within the output folder (build/) to a folder on the server.</p>
+                </div>
+              </div>
+              <div class="card grid-margin">
+                <div class="card-body">
+                  <h3>Basic Structure</h3>
+                  <h4 class="pt-4" id="appComponent">App Component</h4>
+                  <textarea rows="4" cols="50" class="code-non-editable">
+    
+      import React from 'react';
+      import ReactDOM from 'react-dom';
+      import { BrowserRouter } from 'react-router-dom';
+      import App from './app/App';
+      import * as serviceWorker from './serviceWorker';
+      
+      ReactDOM.render(
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      , document.getElementById('root'));
+      
+      serviceWorker.unregister();
+
+                  </textarea>
+                  <h4 class="pt-4" id="navbar">Navbar</h4>
+                  <textarea rows="4" cols="50" class="code-non-editable">
+
+      import React, { Component } from 'react';
+      import { Dropdown } from 'react-bootstrap';
+      
+      class Navbar extends Component {
+        toggleOffcanvas() {
+          document.querySelector('.sidebar-offcanvas').classList.toggle('active');
+        }
+        render () { 
+          return (
+            <nav className="navbar col-lg-12 col-12 p-lg-0 fixed-top d-flex flex-row">
+              <div className="navbar-menu-wrapper d-flex align-items-center justify-content-between">
+              <a className="navbar-brand brand-logo-mini align-self-center d-lg-none" href="!#" onClick={evt =>evt.preventDefault()}><img src={require("../../assets/images/logo-mini.svg")} alt="logo" /></a>
+                <button className="navbar-toggler navbar-toggler align-self-center" type="button" onClick={ () => document.body.classList.toggle('sidebar-icon-only') }>
+                  <i className="mdi mdi-menu"></i>
+                </button>
+                <ul className="navbar-nav navbar-nav-left header-links">
+                  <li className="nav-item d-none d-md-flex">
+                    <a href="!#" onClick={evt =>evt.preventDefault()} className="nav-link">Schedule <span className="badge badge-primary ml-1">New</span>
+                    </a>
+                  </li>
+                  <li className="nav-item active d-none d-xl-flex">
+                    <a href="!#" onClick={evt =>evt.preventDefault()} className="nav-link">
+                      <i className="mdi mdi-elevation-rise"></i>Reports</a>
+                  </li>
+                  <li className="nav-item d-none d-lg-flex">
+                    <a href="!#" onClick={evt =>evt.preventDefault()} className="nav-link">
+                      <i className="mdi mdi-bookmark-plus-outline"></i>Score</a>
+                  </li>
+                </ul>
+                <ul className="navbar-nav navbar-nav-right ml-lg-auto">
+                  <li className="nav-item  nav-profile border-0">
+                    <Dropdown alignRight>
+                      <Dropdown.Toggle className="nav-link count-indicator p-0 toggle-arrow-hide bg-transparent">
+                        <i className="mdi mdi-file-outline"></i>
+                        <span className="count">7</span>
+                      </Dropdown.Toggle>
+                      <Dropdown.Menu className="navbar-dropdown preview-list">
+                        <Dropdown.Item className="dropdown-item  d-flex align-items-center" href="!#" onClick={evt =>evt.preventDefault()}>
+                          <p className="mb-0 font-weight-medium float-left">You have 7 unread mails </p>
+                          <span className="badge badge-pill badge-primary float-right">View all</span>
+                        </Dropdown.Item>
+                        <div className="dropdown-divider"></div>
+                        <Dropdown.Item className="dropdown-item preview-item d-flex align-items-center" href="!#" onClick={evt =>evt.preventDefault()}>
+                          <div className="preview-thumbnail">
+                            <img src={require("../../assets/images/faces/face10.jpg")} alt="profile" className="img-sm profile-pic" /> </div>
+                          <div className="preview-item-content flex-grow py-2">
+                            <p className="preview-subject ellipsis font-weight-medium text-dark">Marian Garner </p>
+                            <p className="font-weight-light small-text"> The meeting is cancelled </p>
+                          </div>
+                        </Dropdown.Item>
+                        <div className="dropdown-divider"></div>
+                        <Dropdown.Item className="dropdown-item preview-item d-flex align-items-center" href="!#" onClick={evt =>evt.preventDefault()}>
+                          <div className="preview-thumbnail">
+                            <img src={require("../../assets/images/faces/face12.jpg")} alt="profile" className="img-sm profile-pic" /> </div>
+                          <div className="preview-item-content flex-grow py-2">
+                            <p className="preview-subject ellipsis font-weight-medium text-dark">David Grey </p>
+                            <p className="font-weight-light small-text"> The meeting is cancelled </p>
+                          </div>
+                        </Dropdown.Item>
+                        <div className="dropdown-divider"></div>
+                        <Dropdown.Item className="dropdown-item preview-item d-flex align-items-center" href="!#" onClick={evt =>evt.preventDefault()}>
+                          <div className="preview-thumbnail">
+                            <img src={require("../../assets/images/faces/face1.jpg")} alt="profile" className="img-sm profile-pic" /> </div>
+                          <div className="preview-item-content flex-grow py-2">
+                            <p className="preview-subject ellipsis font-weight-medium text-dark">Travis Jenkins </p>
+                            <p className="font-weight-light small-text"> The meeting is cancelled </p>
+                          </div>
+                        </Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
+                  </li>
+                  <li className="nav-item  nav-profile border-0 pl-4">
+                    <Dropdown alignRight>
+                      <Dropdown.Toggle className="nav-link count-indicator p-0 toggle-arrow-hide bg-transparent">
+                        <i className="mdi mdi-bell-outline"></i>
+                        <span className="count bg-success">4</span>
+                      </Dropdown.Toggle>
+                      <Dropdown.Menu className="navbar-dropdown preview-list">
+                        <Dropdown.Item className="dropdown-item py-3 d-flex align-items-center" href="!#" onClick={evt =>evt.preventDefault()}>
+                          <p className="mb-0 font-weight-medium float-left">You have 4 new notifications </p>
+                          <span className="badge badge-pill badge-primary float-right">View all</span>
+                        </Dropdown.Item>
+                        <div className="dropdown-divider"></div>
+                        <Dropdown.Item className="dropdown-item preview-item d-flex align-items-center" href="!#" onClick={evt =>evt.preventDefault()}>
+                          <div className="preview-thumbnail">
+                            <i className="mdi mdi-alert m-auto text-primary"></i>
+                          </div>
+                          <div className="preview-item-content py-2">
+                            <h6 className="preview-subject font-weight-normal text-dark mb-1">Application Error</h6>
+                            <p className="font-weight-light small-text mb-0"> Just now </p>
+                          </div>
+                        </Dropdown.Item>
+                        <div className="dropdown-divider"></div>
+                        <Dropdown.Item className="dropdown-item preview-item d-flex align-items-center" href="!#" onClick={evt =>evt.preventDefault()}>
+                          <div className="preview-thumbnail">
+                            <i className="mdi mdi-settings m-auto text-primary"></i>
+                          </div>
+                          <div className="preview-item-content py-2">
+                            <h6 className="preview-subject font-weight-normal text-dark mb-1">Settings</h6>
+                            <p className="font-weight-light small-text mb-0"> Private message </p>
+                          </div>
+                        </Dropdown.Item>
+                        <div className="dropdown-divider"></div>
+                        <Dropdown.Item className="dropdown-item preview-item d-flex align-items-center" href="!#" onClick={evt =>evt.preventDefault()}>
+                          <div className="preview-thumbnail">
+                            <i className="mdi mdi-airballoon m-auto text-primary"></i>
+                          </div>
+                          <div className="preview-item-content py-2">
+                            <h6 className="preview-subject font-weight-normal text-dark mb-1">New user registration</h6>
+                            <p className="font-weight-light small-text mb-0"> 2 days ago </p>
+                          </div>
+                        </Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
+                  </li>
+                  <li className="nav-item  nav-profile border-0">
+                    <Dropdown alignRight>
+                      <Dropdown.Toggle className="nav-link count-indicator bg-transparent">
+                        <span className="profile-text">Richard V.Welsh !</span>
+                        <img className="img-xs rounded-circle" src={require("../../assets/images/faces/face8.jpg")} alt="Profile" />
+                      </Dropdown.Toggle>
+                      <Dropdown.Menu className="preview-list navbar-dropdown pb-3">
+                        <Dropdown.Item className="dropdown-item p-0 preview-item d-flex align-items-center border-bottom" href="!#" onClick={evt =>evt.preventDefault()}>
+                          <div className="d-flex">
+                            <div className="py-3 px-4 d-flex align-items-center justify-content-center">
+                              <i className="mdi mdi-bookmark-plus-outline mr-0"></i>
+                            </div>
+                            <div className="py-3 px-4 d-flex align-items-center justify-content-center border-left border-right">
+                              <i className="mdi mdi-account-outline mr-0"></i>
+                            </div>
+                            <div className="py-3 px-4 d-flex align-items-center justify-content-center">
+                              <i className="mdi mdi-alarm-check mr-0"></i>
+                            </div>
+                          </div>
+                        </Dropdown.Item>
+                        <Dropdown.Item className="dropdown-item preview-item d-flex align-items-center border-0 mt-2" onClick={evt =>evt.preventDefault()}>
+                          Manage Accounts
+                        </Dropdown.Item>
+                        <Dropdown.Item className="dropdown-item preview-item d-flex align-items-center border-0" onClick={evt =>evt.preventDefault()}>
+                          Change Password 
+                        </Dropdown.Item>
+                        <Dropdown.Item className="dropdown-item preview-item d-flex align-items-center border-0" onClick={evt =>evt.preventDefault()}>
+                          Check Inbox
+                        </Dropdown.Item>
+                        <Dropdown.Item className="dropdown-item preview-item d-flex align-items-center border-0" onClick={evt =>evt.preventDefault()}>
+                          Sign Out
+                        </Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
+                  </li>
+                </ul>
+                <button className="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" onClick={this.toggleOffcanvas}>
+                  <span className="mdi mdi-menu"></span>
+                </button>
+              </div>
+            </nav>
+          );
+        }
+      }
+      
+      export default Navbar;
+                    
+                      
+                  </textarea>
+
+                  <h4 class="pt-4" id="leftSidebar">Sidebar</h4>
+                  <textarea rows="4" cols="50" class="code-non-editable">
+
+      import React, { Component } from 'react';
+      import { Link, withRouter } from 'react-router-dom';
+      import { Collapse } from 'react-bootstrap';
+      import { Dropdown } from 'react-bootstrap';
+      
+      class Sidebar extends Component {
+        state = {};
+      
+        toggleMenuState(menuState) {
+          if (this.state[menuState]) {
+            this.setState({[menuState] : false});
+          } else if(Object.keys(this.state).length === 0) {
+            this.setState({[menuState] : true});
+          } else {
+            Object.keys(this.state).forEach(i => {
+              this.setState({[i]: false});
+            });
+            this.setState({[menuState] : true});
+          }
+        }
+      
+        componentDidUpdate(prevProps) {
+          if (this.props.location !== prevProps.location) {
+            this.onRouteChanged();
+          }
+        }
+      
+        onRouteChanged() {
+          document.querySelector('#sidebar').classList.remove('active');
+          Object.keys(this.state).forEach(i => {
+            this.setState({[i]: false});
+          });
+      
+          const dropdownPaths = [
+            {path:'/basic-ui', state: 'basicUiMenuOpen'},
+            {path:'/form-elements', state: 'formElementsMenuOpen'},
+            {path:'/tables', state: 'tablesMenuOpen'},
+            {path:'/icons', state: 'iconsMenuOpen'},
+            {path:'/charts', state: 'chartsMenuOpen'},
+            {path:'/user-pages', state: 'userPagesMenuOpen'},
+          ];
+      
+          dropdownPaths.forEach((obj => {
+            if (this.isPathActive(obj.path)) {
+              this.setState({[obj.state] : true})
+            }
+          }));
+        
+        } 
+        render () {
+          return (
+            <nav className="sidebar sidebar-offcanvas" id="sidebar">
+              <div className="text-center sidebar-brand-wrapper d-flex align-items-center">
+                <a className="sidebar-brand brand-logo" href="index.html"><img src={require("../../assets/images/logo.svg")} alt="logo" /></a>
+                <a className="sidebar-brand brand-logo-mini pt-3" href="index.html"><img src={require("../../assets/images/logo-mini.svg" )} alt="logo" /></a>
+              </div>
+              <ul className="nav">
+                <li className="nav-item nav-profile not-navigation-link">
+                  <div className="nav-link">
+                    <Dropdown>
+                      <Dropdown.Toggle className="nav-link user-switch-dropdown-toggler p-0 toggle-arrow-hide bg-transparent border-0 w-100">
+                        <div className="d-flex justify-content-between align-items-start">
+                          <div className="profile-image">
+                            <img src={ require("../../assets/images/faces/face8.jpg")} alt="profile" />
+                          </div>
+                          <div className="text-left ml-3">
+                            <p className="profile-name">Richard V.Welsh</p>
+                            <small className="designation text-muted text-small">Manager</small>
+                            <span className="status-indicator online"></span>
+                          </div>
+                        </div>
+                      </Dropdown.Toggle>
+                      <Dropdown.Menu className="preview-list navbar-dropdown">
+                        <Dropdown.Item className="dropdown-item p-0 preview-item d-flex align-items-center" href="!#" onClick={evt =>evt.preventDefault()}>
+                          <div className="d-flex">
+                            <div className="py-3 px-4 d-flex align-items-center justify-content-center">
+                              <i className="mdi mdi-bookmark-plus-outline mr-0"></i>
+                            </div>
+                            <div className="py-3 px-4 d-flex align-items-center justify-content-center border-left border-right">
+                              <i className="mdi mdi-account-outline mr-0"></i>
+                            </div>
+                            <div className="py-3 px-4 d-flex align-items-center justify-content-center">
+                              <i className="mdi mdi-alarm-check mr-0"></i>
+                            </div>
+                          </div>
+                        </Dropdown.Item>
+                        <Dropdown.Item className="dropdown-item preview-item d-flex align-items-center text-small" onClick={evt =>evt.preventDefault()}>
+                          Manage Accounts
+                        </Dropdown.Item>
+                        <Dropdown.Item className="dropdown-item preview-item d-flex align-items-center text-small" onClick={evt =>evt.preventDefault()}>
+                        Change Password 
+                        </Dropdown.Item>
+                        <Dropdown.Item className="dropdown-item preview-item d-flex align-items-center text-small" onClick={evt =>evt.preventDefault()}>
+                          Check Inbox
+                        </Dropdown.Item>
+                        <Dropdown.Item className="dropdown-item preview-item d-flex align-items-center text-small" onClick={evt =>evt.preventDefault()}>
+                          Sign Out
+                        </Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
+                    <button className="btn btn-success btn-block">New Project <i className="mdi mdi-plus"></i></button>
+                  </div>
+                </li>
+                <li className={ this.isPathActive('/dashboard') ? 'nav-item active' : 'nav-item' }>
+                  <Link className="nav-link" to="/dashboard">
+                    <i className="mdi mdi-television menu-icon"></i>
+                    <span className="menu-title">Dashboard</span>
+                  </Link>
+                </li>
+                <li className={ this.isPathActive('/basic-ui') ? 'nav-item active' : 'nav-item' }>
+                  <div className={ this.state.basicUiMenuOpen ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('basicUiMenuOpen') } data-toggle="collapse">
+                    <i className="mdi mdi-crosshairs-gps menu-icon"></i>
+                    <span className="menu-title">Basic UI Elements</span>
+                    <i className="menu-arrow"></i>
+                  </div>
+                  <Collapse in={ this.state.basicUiMenuOpen }>
+                    <ul className="nav flex-column sub-menu">
+                      <li className="nav-item"> <Link className={ this.isPathActive('/basic-ui/buttons') ? 'nav-link active' : 'nav-link' } to="/basic-ui/buttons">Buttons</Link></li>
+                      <li className="nav-item"> <Link className={ this.isPathActive('/basic-ui/dropdowns') ? 'nav-link active' : 'nav-link' } to="/basic-ui/dropdowns">Dropdowns</Link></li>
+                      <li className="nav-item"> <Link className={ this.isPathActive('/basic-ui/typography') ? 'nav-link active' : 'nav-link' } to="/basic-ui/typography">Typography</Link></li>
+                    </ul>
+                  </Collapse>
+                </li>
+                <li className={ this.isPathActive('/form-elements') ? 'nav-item active' : 'nav-item' }>
+                  <Link className="nav-link" to="/form-elements/basic-elements">
+                    <i className="mdi mdi-format-list-bulleted menu-icon"></i>
+                    <span className="menu-title">Form Elements</span>
+                  </Link>
+                </li>
+                <li className={ this.isPathActive('/tables') ? 'nav-item active' : 'nav-item' }>
+                  <Link className="nav-link" to="/tables/basic-table">
+                    <i className="mdi mdi-table-large menu-icon"></i>
+                    <span className="menu-title">Tables</span>
+                  </Link>
+                </li>
+                <li className={ this.isPathActive('/icons') ? 'nav-item active' : 'nav-item' }>
+                  <Link className="nav-link" to="/icons/font-awesome">
+                    <i className="mdi mdi-account-box-outline menu-icon"></i>
+                    <span className="menu-title">Icons</span>
+                  </Link>
+                </li>
+                <li className={ this.isPathActive('/charts') ? 'nav-item active' : 'nav-item' }>
+                  <Link className="nav-link" to="/charts/chart-js">
+                    <i className="mdi mdi-chart-line menu-icon"></i>
+                    <span className="menu-title">Charts</span>
+                  </Link>
+                </li>
+                <li className={ this.isPathActive('/user-pages') ? 'nav-item active' : 'nav-item' }>
+                  <div className={ this.state.userPagesMenuOpen ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('userPagesMenuOpen') } data-toggle="collapse">
+                    <i className="mdi mdi-lock-outline menu-icon"></i>
+                    <span className="menu-title">User Pages</span>
+                    <i className="menu-arrow"></i>
+                  </div>
+                  <Collapse in={ this.state.userPagesMenuOpen }>
+                    <ul className="nav flex-column sub-menu">
+                      <li className="nav-item"> <Link className={ this.isPathActive('/user-pages/blank-page') ? 'nav-link active' : 'nav-link' } to="/user-pages/blank-page">Blank Page</Link></li>
+                      <li className="nav-item"> <Link className={ this.isPathActive('/user-pages/login-1') ? 'nav-link active' : 'nav-link' } to="/user-pages/login-1">Login</Link></li>
+                      <li className="nav-item"> <Link className={ this.isPathActive('/user-pages/register-1') ? 'nav-link active' : 'nav-link' } to="/user-pages/register-1">Register</Link></li>
+                      <li className="nav-item"> <Link className={ this.isPathActive('/user-pages/error-404') ? 'nav-link active' : 'nav-link' } to="/user-pages/error-404">404</Link></li>
+                      <li className="nav-item"> <Link className={ this.isPathActive('/user-pages/error-500') ? 'nav-link active' : 'nav-link' } to="/user-pages/error-500">500</Link></li>
+                    </ul>
+                  </Collapse>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="http://www.bootstrapdash.com/demo/star-admin-pro-react/documentation/documentation.html" rel="noopener noreferrer" target="_blank">
+                    <i className="mdi mdi-file-outline menu-icon"></i>
+                    <span className="menu-title">Documentation</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          );
+        }
+      
+        isPathActive(path) {
+          return this.props.location.pathname.startsWith(path);
+        }
+      
+        componentDidMount() {
+          this.onRouteChanged();
+          // add className 'hover-open' to sidebar navitem while hover in sidebar-icon-only menu
+          const body = document.querySelector('body');
+          document.querySelectorAll('.sidebar .nav-item').forEach((el) => {
+            
+            el.addEventListener('mouseover', function() {
+              if(body.classList.contains('sidebar-icon-only')) {
+                el.classList.add('hover-open');
+              }
+            });
+            el.addEventListener('mouseout', function() {
+              if(body.classList.contains('sidebar-icon-only')) {
+                el.classList.remove('hover-open');
+              }
+            });
+          });
+        }
+      
+      }
+      
+      export default withRouter(Sidebar);
+
+      
+                  </textarea>
+                  <h4 class="pt-4" id="footer">Footer</h4>
+                  <textarea rows="4" cols="50" class="code-non-editable">
+      import React, { Component } from 'react';
+
+      class Footer extends Component {
+        render () {
+          return (
+            <footer className="footer">
+              <div className="container-fluid">
+                <div className="d-sm-flex justify-content-center justify-content-sm-between">
+                  <span className="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2019 <a href="https://www.bootstrapdash.com/" target="_blank" rel="noopener noreferrer">BootstrapDash</a>. All rights reserved.</span>
+                  <span className="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i className="mdi mdi-heart text-danger"></i></span>
+                </div>
+              </div>
+            </footer>
+          );
+        }
+      }
+      
+      export default Footer;
+                  </textarea>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h3 id="customerSupport" class="mb-4">Customer Support</h3>
+                  <p>We will assist you any problem you encounter while buidling your dashboard via Star Admin. If you have any questions or issues regarding this theme please use  <a class="d-inline text-info" href="https://bootstrapdash.freshdesk.com/support/tickets/new" target="blank">BootstrapDash support form</a></p>
+                  <p class="d-inline"></p>
+                  <p>We will respond to you as quickly as we can. Thank you.</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/mode/python/python.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

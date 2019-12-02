@@ -1,0 +1,48 @@
+// Cards Mixins 
+
+@mixin card-inverse-variant($bg, $border, $color) {
+  background: $bg;
+  border: 1px solid $border;
+  color: $color;
+}
+@mixin bg-inverse-icon($color) {
+  background: darken($color, 24%);
+  border-color: $color;
+
+  .bg-item {
+    color: $color;
+
+    &:before {
+      color: inherit;
+    }
+
+    a {
+      color: inherit;
+    }
+  }
+
+  &.bg-custom {
+    background: transparent;
+
+    .bg-item {
+      background: lighten($color, 25%);
+
+      a {
+        color: $color;
+        border: none;
+
+        &:before {
+          border-left-color: lighten($color, 25%);
+        }
+      }
+
+      span {
+        color: $color;
+      }
+
+      &:last-child {
+        background: transparent;
+      }
+    }
+  }
+}// Background Mixins //

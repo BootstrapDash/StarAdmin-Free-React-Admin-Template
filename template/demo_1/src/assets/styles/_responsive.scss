@@ -1,0 +1,58 @@
+@media (max-width: 991px) {
+  .navbar {
+    .navbar-brand-wrapper {
+      .brand-logo {
+        display: none;
+      }
+      .brand-logo-mini {
+        display: inline-block;
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+
+    &.row-offcanvas-right {
+      right: 0;
+
+      ::ng-deep .sidebar-offcanvas {
+        right: -100%; // 12 columns
+      }
+
+      &.active {
+        right: calc(50% + 30px); // 6 columns
+
+        ::ng-deep .sidebar-offcanvas {
+          right: calc(-50% - 15px); // 6 columns
+        }
+      }
+    }
+
+    &.row-offcanvas-left {
+      left: 0;
+
+      ::ng-deep .sidebar-offcanvas {
+        left: -100%; // 12 columns
+      }
+
+      &.active {
+        left: 50%; // 6 columns
+
+        ::ng-deep .sidebar-offcanvas {
+          left: -50%; // 6 columns
+        }
+      }
+    }
+
+    ::ng-deep .sidebar-offcanvas {
+      position: absolute;
+      top: 0;
+      width: calc( 50% + 30px); // 6 columns
+    }
+  }
+}

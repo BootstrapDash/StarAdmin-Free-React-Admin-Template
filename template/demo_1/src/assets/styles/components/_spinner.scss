@@ -1,0 +1,37 @@
+.spinner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - #{$navbar-height} - 5.5rem);
+  position: fixed;
+  width: calc(100% - #{$sidebar-width-lg} - 4rem);
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+  .donut {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 0.3rem solid lighten(theme-color(primary),30%);
+    border-top-color: lighten(theme-color(primary),10%);
+    animation: 1.5s spin infinite linear;
+  }
+}
+
+:host-context(.sidebar-icon-only) {
+  .spinner-wrapper {
+    width: calc(100% - #{$sidebar-width-icon} - 4rem);    
+  }
+}
+
+:host-context(.sidebar-mini) {
+  .spinner-wrapper {
+    width: calc(100% - #{$sidebar-width-mini} - 4rem);    
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
