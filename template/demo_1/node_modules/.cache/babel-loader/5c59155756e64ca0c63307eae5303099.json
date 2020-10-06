@@ -1,0 +1,1 @@
+{"ast":null,"code":"import createWithBsPrefix from './createWithBsPrefix';\nvar FigureCaption = createWithBsPrefix('figure-caption', {\n  Component: 'figcaption'\n});\nexport default FigureCaption;","map":null,"metadata":{},"sourceType":"module"}

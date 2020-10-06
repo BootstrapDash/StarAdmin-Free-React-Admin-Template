@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var slice = Array.prototype.slice;\nexport function shuffle(array) {\n  var m = array.length,\n      t,\n      i;\n\n  while (m) {\n    i = Math.random() * m-- | 0;\n    t = array[m];\n    array[m] = array[i];\n    array[i] = t;\n  }\n\n  return array;\n}","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"// reading a dimension prop will cause the browser to recalculate,\n// which will let our animations work\nexport default function triggerBrowserReflow(node) {\n  node.offsetHeight; // eslint-disable-line no-unused-expressions\n}","map":null,"metadata":{},"sourceType":"module"}

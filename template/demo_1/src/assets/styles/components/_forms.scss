@@ -79,3 +79,23 @@ select {
 .form-check-input {
   margin-left: 0;
 }
+
+.custom-file {
+  .visibility-hidden {
+  visibility: hidden;
+  }
+  .custom-file-label {
+    background: $input-bg;;
+    border: 1px solid $border-color;
+    height: calc(2.25rem + 2px);
+    font-weight: normal;
+    font-size: 0.875rem;
+    padding: 0.625rem 0.6875rem;
+    border-radius: 2px;
+    &:after {
+      background-color: theme-color(primary);
+      height: auto;
+      @extend .btn-primary;
+    }
+  }
+}

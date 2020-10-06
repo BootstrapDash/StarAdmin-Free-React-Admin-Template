@@ -1,0 +1,1 @@
+{"ast":null,"code":"import ownerDocument from 'dom-helpers/ownerDocument';\nimport safeFindDOMNode from './safeFindDOMNode';\nexport default (function (componentOrElement) {\n  return ownerDocument(safeFindDOMNode(componentOrElement));\n});","map":null,"metadata":{},"sourceType":"module"}

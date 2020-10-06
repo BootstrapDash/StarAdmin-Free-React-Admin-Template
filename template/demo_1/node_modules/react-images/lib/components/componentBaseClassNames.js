@@ -1,0 +1,18 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/**
+ * Used to get the HTML class to select specific components.
+ * We call `className()` in utils with each of these to get the full className,
+ * with prefixes.
+ */
+var componentBaseClassNames = {
+  Header: 'header',
+  Footer: 'footer',
+  View: 'view',
+  Track: 'track'
+};
+
+exports.default = componentBaseClassNames;

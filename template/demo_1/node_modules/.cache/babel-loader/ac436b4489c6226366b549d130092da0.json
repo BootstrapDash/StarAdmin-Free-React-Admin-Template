@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from 'react';\nvar DropdownContext = React.createContext(null);\nexport default DropdownContext;","map":null,"metadata":{},"sourceType":"module"}

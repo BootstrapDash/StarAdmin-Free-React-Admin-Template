@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default function getBoundingClientRect(element) {\n  var rect = element.getBoundingClientRect();\n  return {\n    width: rect.width,\n    height: rect.height,\n    top: rect.top,\n    right: rect.right,\n    bottom: rect.bottom,\n    left: rect.left,\n    x: rect.left,\n    y: rect.top\n  };\n}","map":null,"metadata":{},"sourceType":"module"}

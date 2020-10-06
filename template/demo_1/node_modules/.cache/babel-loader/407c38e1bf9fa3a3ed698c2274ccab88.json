@@ -1,0 +1,1 @@
+{"ast":null,"code":"var rHyphen = /-(.)/g;\nexport default function camelize(string) {\n  return string.replace(rHyphen, function (_, chr) {\n    return chr.toUpperCase();\n  });\n}","map":null,"metadata":{},"sourceType":"module"}

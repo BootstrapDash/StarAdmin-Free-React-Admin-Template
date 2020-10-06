@@ -1,0 +1,26 @@
+
+.ReactTable {
+  .rt-thead {
+    .rt-th {
+      padding: 1rem;
+      text-align: left;
+      font-weight: bold;
+    }
+    &.-header {
+      box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0);
+      border-bottom: 1px solid $border-color;
+      background: $content-bg;
+    }
+  }
+  .rt-td {
+    padding: 1rem;
+  }
+  .form-check {
+    margin: 0;
+  }
+  @media (max-width: 992px) {
+    .-pagination {
+      display: block;
+    }
+  }
+}

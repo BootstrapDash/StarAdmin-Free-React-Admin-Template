@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { createPopper, popperGenerator } from \"./index.js\";\nimport detectOverflow from \"./utils/detectOverflow.js\"; // eslint-disable-next-line import/no-unused-modules\n\nexport { createPopper, popperGenerator, detectOverflow };","map":null,"metadata":{},"sourceType":"module"}

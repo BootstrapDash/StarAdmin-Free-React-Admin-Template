@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - node
+  - lts/*
+deploy:
+  provider: npm
+  email: nihey.takizawa@gmail.com
+  api_key:
+    secure: H3Gqi2o3aRSq4MaCDa2bLJxb79WHa6BpsvmqBZw2M0Fj8vCxPMDFG13K7aybjxsH0wQdXaD+fd2dDhIosuUeV+3s0p5yU5noLnfaQ8ww7t1RmhxRszWVc9foJLWl95QkLjQAo4VqgYzQJB6zeGs0p7LcuNmuBkA2Roxe3aiqq3gXg669KG4THF0jhWGWwA4e4kvtxBk09fsgGom4KGHYzSVxUgY2Bg7ywqBHL4ba51UgnVNXZAnpysXUdL71ggqvsAqtsAAeSOrXfVpJm7TK7gBymKxAuZWXsWUB7VdUroVpxKxdoAAYUjzYsJz/qhMJrMn3XGmbXJQzXhLPRxrzgi32aBIi9EXLShBIDZQVV7rkA2U3Kz5w9nFydTGJ2zVMqBpT8EydFjuHXJqQ9YLzU9DVl05ngs4qfkE0sQA9b3PPb8yppl/QFTJteH257sUx5IyU3814ad61Odhtl9TEQTSEbBCj7Kcs4baXvUJJyuKOHa7HT99r/ehF9ruw+SUcISm306Srd4SQXevZmvmn1yUwL9bfuEyKP8lIIybbsJ3DnkFPFX9l+SrrwjdQB/XZxtQzGDcu2G1CVx/KrxO1HK5pPboL9pg0Gp6PAw529wsmDPgyOi+x8qqXI1tysE2mkClMly7b/MLLMIUYKnPaTAK9d3ZhVMncJVAnYvHFcy8=
+  on:
+    tags: true
+    repo: nihey/react-clipboard.js

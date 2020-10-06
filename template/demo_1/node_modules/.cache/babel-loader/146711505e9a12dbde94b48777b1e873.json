@@ -1,0 +1,1 @@
+{"ast":null,"code":"import ownerDocument from './ownerDocument';\nexport default function ownerWindow(node) {\n  var doc = ownerDocument(node);\n  return doc && doc.defaultView || window;\n}","map":null,"metadata":{},"sourceType":"module"}

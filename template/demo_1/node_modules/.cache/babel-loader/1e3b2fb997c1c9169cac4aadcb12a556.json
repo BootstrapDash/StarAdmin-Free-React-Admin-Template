@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from 'react';\nvar NavContext = React.createContext(null);\nexport default NavContext;","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,75 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = createHover;
+
+var _invariant = _interopRequireDefault(require("invariant"));
+
+var _matchesType = _interopRequireDefault(require("../../utils/matchesType"));
+
+var _types = require("./types");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function createHover(manager) {
+  return function hover(targetIdsArg) {
+    var _ref = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
+        clientOffset = _ref.clientOffset;
+
+    verifyTargetIdsIsArray(targetIdsArg);
+    var targetIds = targetIdsArg.slice(0);
+    var monitor = manager.getMonitor();
+    var registry = manager.getRegistry();
+    checkInvariants(targetIds, monitor, registry);
+    var draggedItemType = monitor.getItemType();
+    removeNonMatchingTargetIds(targetIds, registry, draggedItemType);
+    hoverAllTargets(targetIds, monitor, registry);
+    return {
+      type: _types.HOVER,
+      payload: {
+        targetIds: targetIds,
+        clientOffset: clientOffset || null
+      }
+    };
+  };
+}
+
+function verifyTargetIdsIsArray(targetIdsArg) {
+  (0, _invariant.default)(Array.isArray(targetIdsArg), 'Expected targetIds to be an array.');
+}
+
+function checkInvariants(targetIds, monitor, registry) {
+  (0, _invariant.default)(monitor.isDragging(), 'Cannot call hover while not dragging.');
+  (0, _invariant.default)(!monitor.didDrop(), 'Cannot call hover after drop.');
+
+  for (var i = 0; i < targetIds.length; i++) {
+    var targetId = targetIds[i];
+    (0, _invariant.default)(targetIds.lastIndexOf(targetId) === i, 'Expected targetIds to be unique in the passed array.');
+    var target = registry.getTarget(targetId);
+    (0, _invariant.default)(target, 'Expected targetIds to be registered.');
+  }
+}
+
+function removeNonMatchingTargetIds(targetIds, registry, draggedItemType) {
+  // Remove those targetIds that don't match the targetType.  This
+  // fixes shallow isOver which would only be non-shallow because of
+  // non-matching targets.
+  for (var i = targetIds.length - 1; i >= 0; i--) {
+    var targetId = targetIds[i];
+    var targetType = registry.getTargetType(targetId);
+
+    if (!(0, _matchesType.default)(targetType, draggedItemType)) {
+      targetIds.splice(i, 1);
+    }
+  }
+}
+
+function hoverAllTargets(targetIds, monitor, registry) {
+  // Finally call hover on all matching targets.
+  targetIds.forEach(function (targetId) {
+    var target = registry.getTarget(targetId);
+    target.hover(monitor, targetId);
+  });
+}

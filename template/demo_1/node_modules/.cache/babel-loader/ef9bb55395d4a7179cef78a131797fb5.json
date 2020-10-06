@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from 'react';\nvar SelectableContext = React.createContext();\nexport var makeEventKey = function makeEventKey(eventKey, href) {\n  if (eventKey != null) return String(eventKey);\n  return href || null;\n};\nexport default SelectableContext;","map":null,"metadata":{},"sourceType":"module"}

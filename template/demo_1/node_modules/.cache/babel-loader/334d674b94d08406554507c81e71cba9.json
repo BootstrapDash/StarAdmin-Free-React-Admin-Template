@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default function () {\n  return Math.random();\n}","map":null,"metadata":{},"sourceType":"module"}

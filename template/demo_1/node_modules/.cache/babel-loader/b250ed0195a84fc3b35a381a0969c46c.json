@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default function ZoomEvent(target, type, transform) {\n  this.target = target;\n  this.type = type;\n  this.transform = transform;\n}","map":null,"metadata":{},"sourceType":"module"}

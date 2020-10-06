@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default function () {\n  var nodes = [];\n  this.each(function (node) {\n    nodes.push(node);\n  });\n  return nodes;\n}","map":null,"metadata":{},"sourceType":"module"}

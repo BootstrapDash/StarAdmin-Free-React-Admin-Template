@@ -2,8 +2,10 @@
 
 /* === Plugin styles === */
 
+@import "~react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
+@import '~@fullcalendar/core/main.css';
+@import '~@fullcalendar/daygrid/main.css';
 
-@import '~react-datepicker/dist/react-datepicker.css';
 
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
@@ -17,17 +19,20 @@
 
 /* === Icon fonts === */
 @import "~@mdi/font/scss/materialdesignicons";
-@import "~font-awesome/scss/font-awesome";
+@import "~flag-icon-css/sass/flag-icon";
 
 
 /* === Template mixins === */
 @import "../assets/styles/mixins/animation";
-@import "../assets/styles/mixins/buttons";
 @import "../assets/styles/mixins/badges";
+@import "../assets/styles/mixins/buttons";
 @import "../assets/styles/mixins/misc";
 @import "../assets/styles/mixins/color-functions";
 @import "../assets/styles/mixins/cards";
 @import "../assets/styles/mixins/blockqoute";
+@import "../assets/styles/mixins/popovers";
+@import "../assets/styles/mixins/tooltips";
+@import "../assets/styles/mixins/no-ui-slider";
 
 
 /* === Core Styles === */
@@ -48,20 +53,29 @@
 @import "../assets/styles/components/icons";
 @import "../assets/styles/components/tables";
 @import "../assets/styles/components/buttons";
-@import "../assets/styles/components/badges";
+@import "../assets/styles/components/breadcrumbs";
 @import "../assets/styles/components/cards";
-@import "../assets/styles/components/dropdowns";
-@import "../assets/styles/components/todo-list";
-@import "../assets/styles/components/spinner";
-@import "../assets/styles/components/bootstrap-progress";
 @import "../assets/styles/components/preview";
+@import "../assets/styles/components/user-profile";
+@import "../assets/styles/components/lists";
+@import "../assets/styles/components/bootstrap-progress";
+@import "../assets/styles/components/tabs";
+@import "../assets/styles/components/dropdowns";
+@import "../assets/styles/components/pagination";
+@import "../assets/styles/components/loaders/loaders";
+@import "../assets/styles/components/timeline";
+@import "../assets/styles/components/spinner";
+@import "../assets/styles/components/react-table";
 
 @import "../assets/styles/components/landing-screens/auth";
 
 /* === Plugin Overrides === */
+@import "../assets/styles/components/plugin-overrides/react-bootstrap-table";
+@import "../assets/styles/components/plugin-overrides/react-table";
 
 /* === Layout === */
 @import "../assets/styles/navbar";
 @import "../assets/styles/sidebar";
 @import "../assets/styles/footer";
 @import "../assets/styles/layout";
+@import "../assets/styles/settings-panel";

@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default function isDocument(element) {\n  return 'nodeType' in element && element.nodeType === document.DOCUMENT_NODE;\n}","map":null,"metadata":{},"sourceType":"module"}

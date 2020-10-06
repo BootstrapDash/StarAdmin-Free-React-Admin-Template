@@ -41,14 +41,14 @@ $colors: (
 
 
 $theme-colors: (
-  primary:         #2196f3,
-  secondary:       #dde4eb,
-  success:         #19d895,
-  info:            #8862e0,
-  warning:         #ffaf00,
-  danger:          #FF0017,
-  light:           #fbfbfb,
-  dark:            #252C46
+  primary: #2196f3, 
+  secondary: #dde4eb, 
+  success:#19d895, 
+  info: #8862e0, 
+  warning: #ffaf00, 
+  danger: #ff6258, 
+  light: #fbfbfb, 
+  dark: #252C46
 );
 
 $theme-gradient-colors: (
@@ -66,7 +66,7 @@ $theme-gradient-colors: (
 ////////// COLOR SYSTEM //////////
 
 ////////// COLOR VARIABLES //////////
-$content-bg: #f3f4fa;
+$content-bg: #f3f3f3;
 $footer-bg: $content-bg;
 $footer-color: color(dark);
 $border-color: #dee2e6;
@@ -105,22 +105,22 @@ $body-color: #343a40;
 ////////// FONT VARIABLES //////////
 
 ////////// SIDEBAR ////////
-$sidebar-width-lg: 255px;
+$sidebar-width-lg: 270px;
 $sidebar-width-mini: 185px;
 $sidebar-width-icon: 70px;
 
 $sidebar-light-bg: #fff;
-$sidebar-light-menu-color: #4a4a4a;
+$sidebar-light-menu-color: #fff;
 $sidebar-light-submenu-color: $sidebar-light-menu-color;
-$sidebar-light-menu-active-bg: #fafbfc;
-$sidebar-light-menu-active-color:theme-color(primary);
+$sidebar-light-menu-active-bg: #0f25d5;
+$sidebar-light-menu-active-color:#fff;
 $sidebar-light-menu-hover-bg: $sidebar-light-menu-active-bg;
 $sidebar-light-menu-hover-color: $sidebar-light-menu-color;
 $sidebar-light-submenu-hover-bg: initial;
 $sidebar-light-submenu-hover-color: #000;
 $sidebar-light-icon-active-color: theme-color(success);
 $sidebar-light-menu-icon-color: $sidebar-light-menu-color;
-$sidebar-light-menu-arrow-color: #9e9da0;
+$sidebar-light-menu-arrow-color: #bfccda;
 $sidebar-light-menu-border-color: #c0bfcf;
 $sidebar-light-category-color: #999999;
 $sidebar-light-profile-name-color: #404852;
@@ -128,7 +128,25 @@ $sidebar-light-profile-title-color: #8d9498;
 
 
 
+$sidebar-gradient-color-1:#5768f3;
+$sidebar-gradient-color-2:#1c45ef;
+$sidebar-gradient:linear-gradient(to top, $sidebar-gradient-color-1, $sidebar-gradient-color-2);
+$navbar-dropdown-toggle-arrow-color:grey;
 
+$sidebar-light-submenu-line-color: darken($sidebar-gradient-color-1, 18%);
+$rtl-sidebar-submenu-padding: 0 3.45rem 0 0;
+$sidebar-menu-padding-rtl: 15px 70px 15px 30px;
+$sidebar-navlink-menu-item-hover-color:darken($sidebar-light-menu-color, 5%);
+$sidebar-nav-item-profile-border-color:1px solid rgba(#fff, 0.11);
+$sidebar-nav-item-profile-bg:rgba(255, 255, 255, 0.1);
+$sidebar-nav-item-profile-color: #fff;
+$sidebar-profile-name-color: #fff !default;
+$sidebar-profile-designation-color:#fff !default;
+$sidebar-nav-category-border-color:rgba(255, 255, 255, 0.13);
+$sidebar-nav-item-dot-color:#fff;
+
+$navbar-menu-wrapper-color:#001737;
+$navbar-menu-wrapper-box-shadow:0 4px 16px 0 rgba(167, 175, 183, 0.33);
 
 $sidebar-dark-bg: #18151e;
 $sidebar-dark-menu-color: $white;
@@ -148,11 +166,11 @@ $sidebar-dark-menu-arrow-color: #9e9da0;
 $sidebar-dark-profile-name-color: #404852;
 $sidebar-dark-profile-title-color: #8d9498;
 
-$sidebar-menu-font-size: 12px;
+$sidebar-menu-font-size: 15px;
 $sidebar-menu-padding-y: 12px;
 $sidebar-menu-padding-x: 2.25rem;
 
-$sidebar-menu-padding: 16px 35px;
+$sidebar-menu-padding: 15px 30px 15px 55px;
 $sidebar-icon-size: 16px;
 
 $sidebar-submenu-font-size: .75rem;
@@ -179,9 +197,9 @@ $icon-only-menu-bg-dark: $sidebar-dark-bg;
 ///////// NAVBAR ////////
 
 $navbar-height: 63px;
-$navbar-bg: linear-gradient(120deg, #2f78e9, #128bfc, #18bef1);
-$navbar-menu-color: #fff;
-$navbar-font-size: 12px;
+$navbar-bg: #fff;
+$navbar-menu-color: #001737;
+$navbar-font-size: 15px;
 $navbar-icon-font-size: 1.25rem;
 $nvabar-brand-bg: #000000; 
 $nvabar-toggler-color: #8e94a9;
@@ -332,7 +350,7 @@ $breadcrumb-item-bg:                #dbe3e6;
 
 ////////// MODALS VARIABLES //////////
 
-$modal-inner-padding:               15px;
+$modal-inner-padding:               0.9375rem;
 $modal-dialog-margin:               10px;
 $modal-dialog-margin-y-sm-up:       30px;
 $modal-title-line-height:           $line-height-base;
@@ -430,3 +448,11 @@ $list-border-bg: #e8e8e8;
 
 $accordian-head-color: $black;
 $datepicker-arrow-bg: #eef1f2;
+
+
+$page-header-toolbar-btn-color: theme-color(primary);
+
+$card-accent-color: #030aac;
+$iconholder-primary-border-color:#4e55c5;
+$iconholder-primary-bg:#2944b5;
+$iconholder-primary-color: #fff;

@@ -1,0 +1,23 @@
+{
+  "ecmaFeatures": {
+    "blockBindings": true,
+    "forOf": true,
+    "jsx": false,
+    "modules": true,
+    "arrowFunctions": true,
+    "classes": true,
+    "defaultParams": true,
+    "destructuring": true,
+    "forOf": true,
+    "generators": true,
+    "objectLiteralComputedProperties": true,
+    "objectLiteralDuplicateProperties": true,
+    "objectLiteralShorthandMethods": true,
+    "objectLiteralShorthandProperties":true,
+    "superInFunctions": true,
+    "templateStrings": true
+  },
+  "rules": {
+    "semi": 2
+  }
+}

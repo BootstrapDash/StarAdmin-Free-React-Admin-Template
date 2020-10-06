@@ -1,0 +1,1 @@
+{"ast":null,"code":"import ReactDOM from 'react-dom';\nexport default function safeFindDOMNode(componentOrElement) {\n  if (componentOrElement && 'setState' in componentOrElement) {\n    return ReactDOM.findDOMNode(componentOrElement);\n  }\n\n  return componentOrElement != null ? componentOrElement : null;\n}","map":null,"metadata":{},"sourceType":"module"}

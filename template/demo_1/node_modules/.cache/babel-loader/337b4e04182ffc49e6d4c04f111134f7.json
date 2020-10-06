@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { event } from \"d3-selection\";\nexport function nopropagation() {\n  event.stopImmediatePropagation();\n}\nexport default function () {\n  event.preventDefault();\n  event.stopImmediatePropagation();\n}","map":null,"metadata":{},"sourceType":"module"}

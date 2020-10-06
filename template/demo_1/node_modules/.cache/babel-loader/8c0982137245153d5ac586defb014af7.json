@@ -1,0 +1,1 @@
+{"ast":null,"code":"export function x(d) {\n  return d[0];\n}\nexport function y(d) {\n  return d[1];\n}","map":null,"metadata":{},"sourceType":"module"}

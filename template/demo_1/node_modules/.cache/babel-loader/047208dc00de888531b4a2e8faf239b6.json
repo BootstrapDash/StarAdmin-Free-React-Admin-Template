@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default function (target, type, selection) {\n  this.target = target;\n  this.type = type;\n  this.selection = selection;\n}","map":null,"metadata":{},"sourceType":"module"}

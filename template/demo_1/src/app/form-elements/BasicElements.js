@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Form } from 'react-bootstrap';
 import DatePicker from "react-datepicker";
+import bsCustomFileInput from 'bs-custom-file-input';
 
 export class BasicElements extends Component {
   state = {
@@ -12,6 +13,11 @@ export class BasicElements extends Component {
       startDate: date
     });
   };
+
+  componentDidMount() {
+    bsCustomFileInput.init()
+  }
+
   render() {
     return (
       <div>
@@ -136,12 +142,9 @@ export class BasicElements extends Component {
                   </Form.Group>
                   <Form.Group>
                     <label>File upload</label>
-                    <Form.Control type="file" name="img[]" className="file-upload-default" />
-                    <div className="input-group col-xs-12">
-                      <Form.Control type="text" className="form-control file-upload-info" disabled placeholder="Upload Image" /> 
-                      <span className="input-group-append">
-                        <button className="file-upload-browse btn btn-primary" type="button">Upload</button>
-                      </span>
+                    <div className="custom-file">
+                      <Form.Control type="file" className="form-control visibility-hidden" id="customFileLang" lang="es"/>
+                      <label className="custom-file-label" htmlFor="customFileLang">Upload image</label>
                     </div>
                   </Form.Group>
                   <Form.Group>
