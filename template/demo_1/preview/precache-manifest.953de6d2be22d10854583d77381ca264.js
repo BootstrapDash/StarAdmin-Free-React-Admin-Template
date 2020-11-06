@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9c975707993e33d84e7266aa5880d3b0",
+    "revision": "8b89ad9a94afbfde26e2c025d3120f35",
     "url": "/demo/star-admin-free/react/template/demo_1/preview/index.html"
   },
   {
@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/demo/star-admin-free/react/template/demo_1/preview/static/css/5.156fe21f.chunk.css"
   },
   {
-    "revision": "e6186e257ac53266c009",
+    "revision": "04efbc3031c6973e8343",
     "url": "/demo/star-admin-free/react/template/demo_1/preview/static/css/main.88504406.chunk.css"
   },
   {
@@ -76,8 +76,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/demo/star-admin-free/react/template/demo_1/preview/static/js/9.14bdaa13.chunk.js"
   },
   {
-    "revision": "e6186e257ac53266c009",
-    "url": "/demo/star-admin-free/react/template/demo_1/preview/static/js/main.67429e09.chunk.js"
+    "revision": "04efbc3031c6973e8343",
+    "url": "/demo/star-admin-free/react/template/demo_1/preview/static/js/main.3fc40f3a.chunk.js"
   },
   {
     "revision": "da6077465592b93915f4",
