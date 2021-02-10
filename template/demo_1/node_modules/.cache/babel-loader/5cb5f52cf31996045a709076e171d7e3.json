@@ -1,1 +1,0 @@
-{"ast":null,"code":"var toArray = Function.prototype.bind.call(Function.prototype.call, [].slice);\nexport default function qsa(element, selector) {\n  return toArray(element.querySelectorAll(selector));\n}","map":null,"metadata":{},"sourceType":"module"}

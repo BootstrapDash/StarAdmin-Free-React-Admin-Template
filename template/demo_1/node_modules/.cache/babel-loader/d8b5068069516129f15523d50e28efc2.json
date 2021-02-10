@@ -1,1 +1,0 @@
-{"ast":null,"code":"import ownerWindow from './ownerWindow';\nexport default function getComputedStyle(node, psuedoElement) {\n  return ownerWindow(node).getComputedStyle(node, psuedoElement);\n}","map":null,"metadata":{},"sourceType":"module"}

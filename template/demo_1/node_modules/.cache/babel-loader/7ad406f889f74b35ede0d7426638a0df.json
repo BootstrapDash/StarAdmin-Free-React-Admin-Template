@@ -1,1 +1,0 @@
-{"ast":null,"code":"import createWithBsPrefix from './createWithBsPrefix';\nexport default createWithBsPrefix('modal-footer');","map":null,"metadata":{},"sourceType":"module"}
