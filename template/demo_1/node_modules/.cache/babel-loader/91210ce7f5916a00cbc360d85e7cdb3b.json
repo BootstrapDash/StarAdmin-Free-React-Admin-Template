@@ -1,1 +1,0 @@
-{"ast":null,"code":"import React from 'react';\nvar TabContext = React.createContext(null);\nexport default TabContext;","map":null,"metadata":{},"sourceType":"module"}

@@ -1,1 +1,0 @@
-{"ast":null,"code":"export function expIn(t) {\n  return Math.pow(2, 10 * t - 10);\n}\nexport function expOut(t) {\n  return 1 - Math.pow(2, -10 * t);\n}\nexport function expInOut(t) {\n  return ((t *= 2) <= 1 ? Math.pow(2, 10 * t - 10) : 2 - Math.pow(2, 10 - 10 * t)) / 2;\n}","map":null,"metadata":{},"sourceType":"module"}

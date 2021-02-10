@@ -1,1 +1,0 @@
-{"ast":null,"code":"export { default as voronoi } from \"./voronoi\";","map":null,"metadata":{},"sourceType":"module"}

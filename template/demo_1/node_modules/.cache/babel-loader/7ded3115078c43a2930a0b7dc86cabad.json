@@ -1,1 +1,0 @@
-{"ast":null,"code":"var rUpper = /([A-Z])/g;\nexport default function hyphenate(string) {\n  return string.replace(rUpper, '-$1').toLowerCase();\n}","map":null,"metadata":{},"sourceType":"module"}
