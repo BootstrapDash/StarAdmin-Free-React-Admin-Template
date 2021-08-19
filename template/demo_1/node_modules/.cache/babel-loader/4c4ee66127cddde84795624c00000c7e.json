@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { useCallback } from 'react';\nimport useCommittedRef from './useCommittedRef';\nexport default function useEventCallback(fn) {\n  var ref = useCommittedRef(fn);\n  return useCallback(function () {\n    return ref.current && ref.current.apply(ref, arguments);\n  }, [ref]);\n}","map":null,"metadata":{},"sourceType":"module"}

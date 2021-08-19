@@ -1,1 +1,0 @@
-{"ast":null,"code":"var supportedTransforms = /^((translate|rotate|scale)(X|Y|Z|3d)?|matrix(3d)?|perspective|skew(X|Y)?)$/i;\nexport default function isTransform(value) {\n  return !!(value && supportedTransforms.test(value));\n}","map":null,"metadata":{},"sourceType":"module"}
