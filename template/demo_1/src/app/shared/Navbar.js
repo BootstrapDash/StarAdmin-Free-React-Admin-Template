@@ -29,7 +29,7 @@ class Navbar extends Component {
                   </div>
                   <span className="profile-text font-weight-medium d-none d-md-block">English</span>
                 </Dropdown.Toggle>
-                <Dropdown.Menu className="navbar-dropdown preview-list">
+                <Dropdown.Menu className="navbar-dropdown preview-list language-tab">
                   <Dropdown.Item className="dropdown-item  d-flex align-items-center" href="!#" onClick={evt =>evt.preventDefault()}>
                     <div className="flag-icon-holder">
                       <i className="flag-icon flag-icon-us"></i>

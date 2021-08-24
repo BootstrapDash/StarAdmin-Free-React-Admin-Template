@@ -1,5 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# node_module for ./template/demo_1/node_modules
+./template/demo_1/node_modules
+
 # dependencies
 node_modules/
 .pnp/

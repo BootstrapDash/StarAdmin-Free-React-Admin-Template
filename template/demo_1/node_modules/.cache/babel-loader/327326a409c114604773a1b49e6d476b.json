@@ -1,1 +1,0 @@
-{"ast":null,"code":"import isDocument from './isDocument';\nexport default function isWindow(node) {\n  if ('window' in node && node.window === node) return node;\n  if (isDocument(node)) return node.defaultView || false;\n  return false;\n}","map":null,"metadata":{},"sourceType":"module"}

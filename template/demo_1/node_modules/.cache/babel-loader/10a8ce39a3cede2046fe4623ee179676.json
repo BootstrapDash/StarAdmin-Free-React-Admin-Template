@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { isElement } from \"./instanceOf.js\";\nexport default function getDocumentElement(element) {\n  // $FlowFixMe: assume body is always available\n  return (isElement(element) ? element.ownerDocument : element.document).documentElement;\n}","map":null,"metadata":{},"sourceType":"module"}

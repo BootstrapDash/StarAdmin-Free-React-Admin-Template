@@ -1,1 +1,0 @@
-{"ast":null,"code":"// Public components\nimport Popper, { placements } from './Popper';\nimport Manager from './Manager';\nimport Reference from './Reference';\nexport { Popper, placements, Manager, Reference }; // Public types","map":null,"metadata":{},"sourceType":"module"}
