@@ -6,7 +6,7 @@ export class Login extends Component {
   render() {
     return (
       <div>
-        <div className="d-flex align-items-center auth px-0">
+        <div className="auth mt-5">
           <div className="row w-100 mx-0">
             <div className="col-lg-4 mx-auto">
               <div className="auth-form-light text-left py-5 px-4 px-sm-5">
